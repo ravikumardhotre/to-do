@@ -6,9 +6,8 @@ const cors = require('cors');
 require('dotenv').config(); 
 const app = express();
 
-
 const corsOptions = {
-    origin: 'http://localhost:4200', // Change this to the desired origin
+    origin: process.env.DOMAIN, // Change this to the desired origin
     credentials: true // Indicates whether or not the response to the request can be exposed when the credentials flag is true
   }
   
